@@ -43,8 +43,11 @@ namespace DuoCheat
 
                 foreach(var element in cheatInfo.session_elements)
                 {
-                    if (!string.IsNullOrEmpty(element.translation)) _userControl.AppendText(element.translation);
+                    if (element.form_tokens.Count(t => t.options.Count > 0) > 0) _userControl.AppendText(element.form_tokens.First(f => f.options.Count > 0).options.First(o => o.correct).display_value);
+                    else if (element.options.Count > 0) _userControl.AppendText(string.Join(" / ", element.options.Where(o => o.correct).Select(o => o.sentence)));
+                    else if (!string.IsNullOrEmpty(element.translation)) _userControl.AppendText(element.translation);
                     else if (!string.IsNullOrEmpty(element.text)) _userControl.AppendText(element.text);
+                    else if (element.correct_solutions.Count > 0) _userControl.AppendText(element.correct_solutions[0]);
                     else _userControl.AppendText("?");
                 }
             }

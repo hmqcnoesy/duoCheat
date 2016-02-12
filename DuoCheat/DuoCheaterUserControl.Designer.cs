@@ -30,6 +30,7 @@
         {
             this.txtCheatInfo = new System.Windows.Forms.TextBox();
             this.chkEnabled = new System.Windows.Forms.CheckBox();
+            this.btnClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtCheatInfo
@@ -53,10 +54,21 @@
             this.chkEnabled.UseVisualStyleBackColor = true;
             this.chkEnabled.CheckedChanged += new System.EventHandler(this.chkEnabled_CheckedChanged);
             // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(503, 17);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(75, 23);
+            this.btnClear.TabIndex = 2;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
             // DuoCheaterUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.chkEnabled);
             this.Controls.Add(this.txtCheatInfo);
             this.Name = "DuoCheaterUserControl";
@@ -70,5 +82,6 @@
 
         private System.Windows.Forms.TextBox txtCheatInfo;
         private System.Windows.Forms.CheckBox chkEnabled;
+        private System.Windows.Forms.Button btnClear;
     }
 }

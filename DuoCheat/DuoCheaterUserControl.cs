@@ -20,10 +20,12 @@ namespace DuoCheat
             _parentExtension = parent;
         }
 
+
         private void chkEnabled_CheckedChanged(object sender, EventArgs e)
         {
             _parentExtension.Enabled = chkEnabled.Checked;
         }
+
 
         public void AppendText(string value)
         {
@@ -42,9 +44,16 @@ namespace DuoCheat
             txtCheatInfo.ScrollToCaret();
         }
 
+
         public void ResetCount()
         {
             _count = 1;
+        }
+
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            this.txtCheatInfo.Clear();
         }
     }
 }
