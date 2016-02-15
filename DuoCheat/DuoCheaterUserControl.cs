@@ -33,6 +33,11 @@ namespace DuoCheat
             {
                 txtCheatInfo.AppendText("\r\n");
             }
+            else if (value.StartsWith("\r\n"))
+            {
+                txtCheatInfo.AppendText(value);
+                if (!value.EndsWith("\r\n")) txtCheatInfo.AppendText("\r\n");
+            }
             else
             {
                 txtCheatInfo.AppendText(_count.ToString() + ".  " + value);
@@ -43,7 +48,6 @@ namespace DuoCheat
             txtCheatInfo.SelectionStart = txtCheatInfo.Text.Length;
             txtCheatInfo.ScrollToCaret();
         }
-
 
         public void ResetCount()
         {

@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CheatInfo.cs" />
+    <Compile Include="Answer.cs" />
     <Compile Include="DuoCheater.cs" />
     <Compile Include="DuoCheaterUserControl.cs">
       <SubType>UserControl</SubType>
@@ -56,6 +57,7 @@
     <Compile Include="DuoCheaterUserControl.Designer.cs">
       <DependentUpon>DuoCheaterUserControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="DuoHint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

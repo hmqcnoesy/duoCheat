@@ -35,12 +35,12 @@
             // 
             // txtCheatInfo
             // 
-            this.txtCheatInfo.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCheatInfo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCheatInfo.Location = new System.Drawing.Point(3, 46);
             this.txtCheatInfo.Multiline = true;
             this.txtCheatInfo.Name = "txtCheatInfo";
             this.txtCheatInfo.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtCheatInfo.Size = new System.Drawing.Size(575, 817);
+            this.txtCheatInfo.Size = new System.Drawing.Size(575, 826);
             this.txtCheatInfo.TabIndex = 0;
             // 
             // chkEnabled
